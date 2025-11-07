@@ -19,4 +19,5 @@ Contributions:
 - Everyone: come up with potential switches to the code to get less traffic
 
 References: 
-https://www.thp.uni-koeln.de/~as/Mypage/traffic.html
+Theory Reference - https://www.thp.uni-koeln.de/~as/Mypage/traffic.html
+Potential Data Source - https://www.kaggle.com/datasets
