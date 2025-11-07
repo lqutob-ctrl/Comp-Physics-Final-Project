@@ -1,12 +1,15 @@
 # Comp-Physics-Final-Project
 We will conduct an analysis of traffic build-up dependence on car density using the Nagel–Schreckenberg traffic CA model.
 
-Planned directory structure:
+Planned directory structure: Results folder, Date folder
+
+Potential packages to use: Numpy, math, random, matplotlib
 
 
 Code Plan:
 - Write/code model to develop math behind car density to traffic function
 - Write/code to model the proportionality between density, time and other factors compared to the traffic build up
+- Calculate the time it takes for one car to get to point A to point B (transverse a set period in space)
 - Build(in python) graphs to simulate different traffic jam scenarios
 - With any extra time, we will propose a solution to these traffic jams (civil engineering approach)
 - With any extra extra time, we will try to code a mathematical simulation of this new proposal
