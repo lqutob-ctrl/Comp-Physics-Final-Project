@@ -14,7 +14,7 @@ Code Plan:
 Contributions:
 - Laila: Help build visuals and write descriptions for different sections and present final project
 - Cosmo: Create graphs to simulate different traffic jam scenarios / Code the proportionality between density, time, and other factors compared to the traffic build up.
-- Charles:
+- Charles: Provide potential solutions to traffic jams (civil engineering)
 - Juan:
 - Everyone: come up with potential switches to the code to get less traffic
 
