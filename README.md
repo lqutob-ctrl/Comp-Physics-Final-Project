@@ -12,10 +12,10 @@ Code Plan:
 - With any extra extra time, we will try to code a mathematical simulation of this new proposal
 
 Contributions:
-Laila: Help build visuals and write description for different sections and present final project
-Cosmo: 
-Charlie:
-Juan:
-Everyone: come up with potential switches to the code to get less traffic
+- Laila: Help build visuals and write description for different sections and present final project
+- Cosmo: 
+- Charles:
+- Juan:
+- Everyone: come up with potential switches to the code to get less traffic
 
 Refernces: 
