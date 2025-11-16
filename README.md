@@ -1,6 +1,6 @@
 # Comp-Physics-Final-Project
 
-We will conduct an analysis of traffic build-up dependence on car density using the Nagel–Schreckenberg traffic CA model.
+We will conduct an analysis of traffic build-up dependence on car density using the Nagel–Schreckenberg traffic CA model. Below are the details of the analysis and further information regarding the implementation of potential solutions.
 
 ## **Nagel–Schreckenberg Model:**
 
