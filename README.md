@@ -1,6 +1,6 @@
 <div align="center">
 
-# Traffic Flow Simulation Using the Nagel–Schreckenberg Model
+# Traffic Flow Simulation Using the NaSch Model
 
 </div>
 
