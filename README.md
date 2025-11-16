@@ -1,4 +1,8 @@
-# Comp-Physics-Final-Project
+<div align="center">
+
+# Traffic Flow Simulation Using the Nagel–Schreckenberg Model
+
+</div>
 
 We will conduct an analysis of traffic build-up dependence on car density using the Nagel–Schreckenberg traffic CA model. Below are the details of the analysis and further information regarding the implementation of potential solutions.
 
