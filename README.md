@@ -6,22 +6,42 @@ Planned directory structure: Results folder, Date folder
 Potential packages to use: Numpy, math, random, matplotlib
 
 
-Nagel–Schreckenberg Model:
+## **Nagel–Schreckenberg Model:**
 
-The model is a cellular automaton model for road traffic flow that can reproduce traffic jams, like those of real life. The model uses periodic boundary conditions (a row of cells that loops back to itself) and car object parameters (cell occupation and velocity) to represent or reproduce interactions. Below are the actions or behaviors (in specific order) of the cars.
+The model is a cellular automaton model for road traffic flow that can reproduce traffic jams, like those of real life. The model uses periodic boundary conditions (a row of cells that loops back to itself) and car object parameters (cell occupation and velocity) to represent or reproduce interactions. Below are the behaviors (in specific order) of the cars.
 
-Rules for the Model:
+## **Rules for the Model:**
 
-Cars not at maximum velocity will increase their velocity by one unit
-The range for the original model was from 0 to 5
-Cars will slow down if a vehicle is in front of them and the number of cells for this distance is smaller than their current velocity
-If the distance is smaller than the velocity, the velocity will adjust to the number of empty cells in front of the car to avoid a collision
-Cars with a velocity of at least 1 will randomly decrease their velocity by 1 unit in accordance with a probability
-The probability is denoted as p and can be set, for example, to 0.5
-Finally, cars will move forward the number of cells that is equal to their velocity
+1. Cars not at maximum velocity will increase their velocity by one unit. The range for the original model was from 0 to 5.
+
+2. Cars will slow down if a vehicle is in front of them and the number of cells for this distance is smaller than their current velocity. If the distance is smaller than the current velocity, the velocity will adjust to the number of empty cells in front of the car to avoid a collision
+
+3. Cars with a velocity of at least 1 will randomly decrease their velocity by 1 unit in accordance with a probability. The probability is denoted as p and can be set, for example, to 0.5
+
+4. Finally, cars will move forward the number of cells that is equal to their velocity
 
 
-Code Plan:
+<br><br>
+
+<div align="center">
+
+## **Nagel–Schreckenberg Model Plot**
+
+</div>
+
+<p align="center">
+  <img src="Nagel-Schreckenberg_model_-_plot_of_average_velocity_v_as_a_function_of_density_of_cars_rho.png" width="600">
+</p>
+
+<p>
+  <strong>Figure 1:</strong> Shown above is the average vehicle velocity as a function of traffic density.
+  Note that changes in randomness (p) result in alterations to the decay rate characteristics and initial average velocity. As shown, as p increases, the decay rate proportionally increases and the initial average velocity decreases.
+</p>
+
+
+<br><br>
+
+## **Code Plan:**
 - Write/code model to develop math behind car density to traffic function
 - Write/code to model the proportionality between density, time and other factors compared to the traffic build up
 - Calculate the time it takes for one car to get to point A to point B (transverse a set period in space)
@@ -29,13 +49,13 @@ Code Plan:
 - With any extra time, we will propose a solution to these traffic jams (civil engineering approach)
 - With any extra extra time, we will try to code a mathematical simulation of this new proposal
 
-Contributions:
+## **Contributions:**
 - Laila: Help build visuals and write descriptions for different sections and present final project
 - Cosmo: Create graphs to simulate different traffic jam scenarios / Code the proportionality between density, time, and other factors compared to the traffic build up.
 - Charles: Provide potential solutions to traffic jams (civil engineering)
 - Juan: Write/code model to develop math behind car density to traffic function
 - Everyone: come up with potential switches to the code to get less traffic
 
-References: 
+## **References:**
 Theory Reference - https://www.thp.uni-koeln.de/~as/Mypage/traffic.html
 <br>Potential Data Source - https://www.kaggle.com/datasets
