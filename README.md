@@ -1,8 +1,7 @@
-<div align="center">
-
-# Traffic Flow Simulation Using the NaSch Model
-
+<div align="center" style="margin:0; padding:0;">
+  <h1 style="margin:0; padding:0;">Traffic Flow Simulation Using the NaSch Model</h1>
 </div>
+
 
 We will conduct an analysis of traffic build-up dependence on car density using the Nagel–Schreckenberg traffic CA model. Below are the details of the analysis and further information regarding the implementation of potential solutions.
 
