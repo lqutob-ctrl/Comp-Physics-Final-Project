@@ -6,6 +6,21 @@ Planned directory structure: Results folder, Date folder
 Potential packages to use: Numpy, math, random, matplotlib
 
 
+Nagel–Schreckenberg Model:
+
+The model is a cellular automaton model for road traffic flow that can reproduce traffic jams, like those of real life. The model uses periodic boundary conditions (a row of cells that loops back to itself) and car object parameters (cell occupation and velocity) to represent or reproduce interactions. Below are the actions or behaviors (in specific order) of the cars.
+
+Rules for the Model:
+
+Cars not at maximum velocity will increase their velocity by one unit
+The range for the original model was from 0 to 5
+Cars will slow down if a vehicle is in front of them and the number of cells for this distance is smaller than their current velocity
+If the distance is smaller than the velocity, the velocity will adjust to the number of empty cells in front of the car to avoid a collision
+Cars with a velocity of at least 1 will randomly decrease their velocity by 1 unit in accordance with a probability
+The probability is denoted as p and can be set, for example, to 0.5
+Finally, cars will move forward the number of cells that is equal to their velocity
+
+
 Code Plan:
 - Write/code model to develop math behind car density to traffic function
 - Write/code to model the proportionality between density, time and other factors compared to the traffic build up
