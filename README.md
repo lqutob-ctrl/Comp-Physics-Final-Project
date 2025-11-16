@@ -1,10 +1,6 @@
 # Comp-Physics-Final-Project
+
 We will conduct an analysis of traffic build-up dependence on car density using the Nagel–Schreckenberg traffic CA model.
-
-Planned directory structure: Results folder, Date folder
-
-Potential packages to use: Numpy, math, random, matplotlib
-
 
 ## **Nagel–Schreckenberg Model:**
 
@@ -21,7 +17,7 @@ The model is a cellular automaton model for road traffic flow that can reproduce
 4. Finally, cars will move forward the number of cells that is equal to their velocity
 
 
-<br><br>
+<br>
 
 <div align="center">
 
@@ -39,7 +35,8 @@ The model is a cellular automaton model for road traffic flow that can reproduce
 </p>
 
 
-<br><br>
+<br>
+
 
 ## **Code Plan:**
 - Write/code model to develop math behind car density to traffic function
@@ -55,6 +52,12 @@ The model is a cellular automaton model for road traffic flow that can reproduce
 - Charles: Provide potential solutions to traffic jams (civil engineering)
 - Juan: Write/code model to develop math behind car density to traffic function
 - Everyone: come up with potential switches to the code to get less traffic
+
+## **Developmental Notes:**
+
+Planned directory structure: Results folder, Date folder
+
+Potential packages to use: Numpy, math, random, matplotlib
 
 ## **References:**
 Theory Reference - https://www.thp.uni-koeln.de/~as/Mypage/traffic.html
