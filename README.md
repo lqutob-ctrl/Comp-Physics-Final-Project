@@ -25,7 +25,7 @@ The model is a cellular automaton model for road traffic flow that can reproduce
 
 <div align="center">
 
-## **Nagel–Schreckenberg Model Plot**
+## **Nagel–Schreckenberg Model (Avg. Velocity vs Density)**
 
 </div>
 
