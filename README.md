@@ -37,6 +37,8 @@ The model is a cellular automaton model for road traffic flow that can reproduce
   Note that changes in randomness (p) result in alterations to the decay rate characteristics and initial average velocity. As shown, as p increases, the decay rate proportionally increases and the initial average velocity decreases.
 </p>
 
+<p>Source: https://en.wikipedia.org/wiki/Nagel%E2%80%93Schreckenberg_model</p>
+
 
 <br>
 
