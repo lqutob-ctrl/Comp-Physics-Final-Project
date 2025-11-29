@@ -41,8 +41,12 @@ The model is a cellular automaton model for road traffic flow that can reproduce
 
 
 <br>
+## **Traffic Flow Animation ** ##
+<p align="center">
+  ![me](https://github.com/lqutob-ctrl/Comp-Physics-Final-Project/blob/main/nasch_animation.gif)
+  </p>
 
-
+<br>
 ## **Code Plan:**
 - Write/code model to develop math behind car density to traffic function
 - Write/code to model the proportionality between density, time and other factors compared to the traffic build up
