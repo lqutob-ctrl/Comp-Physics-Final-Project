@@ -1,0 +1,128 @@
+import random
+
+class Vroom:
+    """
+    Car Settings
+
+    Parameters:
+        x (int): position on the road
+        v (int): velocity
+        v_max (int): max velocity
+    """
+    def __init__(self, x, v, v_max):
+        self.x = x
+        self.v = v
+        self.v_max = v_max
+
+
+class Nagschreck:
+    """
+    An implementation of the Nagel-Schreckenberg Model
+    """
+
+    def __init__(self, num_car, road_len, v_max, p_slow=0.3):
+        """
+        Initialize Parameters
+        """
+        self.num_car = num_car
+        self.road_len = road_len
+        self.v_max = v_max
+        self.p_slow = p_slow  # random slowdown probability
+
+        # list of Vroom objects
+        self.cars = []
+        self.spawn_cars()
+
+    def spawn_cars(self):
+        """
+        Randomly place cars on the road with random initial velocities.
+        No two cars start in the same cell.
+        """
+        positions = random.sample(range(self.road_len), self.num_car)
+        self.cars = [
+            Vroom(
+                x=pos,
+                v=random.randint(0, self.v_max),
+                v_max=self.v_max
+            )
+            for pos in positions
+        ]
+
+    def _build_road(self):
+        """
+        Create a list 'road' where road[i] = index of car at cell i,
+        or None if the cell is empty.
+        """
+        road = [None] * self.road_len
+        for idx, car in enumerate(self.cars):
+            road[car.x] = idx
+        return road
+
+    def distance_btw_car(self, car_idx, road):
+        """
+        Distance (number of empty cells) from this car to the next car ahead
+        on a circular road.
+        """
+        car = self.cars[car_idx]
+        gap = 0
+        i = 1
+        while i < self.road_len:
+            j = (car.x + i) % self.road_len
+            if road[j] is not None:
+                break
+            gap += 1
+            i += 1
+        return gap
+
+    def update(self):
+        """
+        Apply one Nagel–Schreckenberg update step to all cars.
+        """
+        road = self._build_road()
+
+        new_positions = [0] * self.num_car
+        new_velocities = [0] * self.num_car
+
+        # iterate over cars in any order (ID order is fine)
+        for idx, car in enumerate(self.cars):
+            v = car.v
+
+            # 1. Acceleration (THIS caps at v_max)
+            v = min(v + 1, self.v_max)
+
+            # 2. Slowing down: avoid collision
+            gap = self.distance_btw_car(idx, road)
+            v = min(v, gap)
+
+            # 3. Randomization
+            if v > 0 and random.random() < self.p_slow:
+                v -= 1
+
+            # 4. Move car
+            new_x = (car.x + v) % self.road_len
+
+            new_positions[idx] = new_x
+            new_velocities[idx] = v
+
+        # Write back
+        for i, car in enumerate(self.cars):
+            car.x = new_positions[i]
+            car.v = new_velocities[i]
+
+    def road_string(self):
+        """
+        Return a string representation of the road:
+        '.' for empty, number for velocity of car.
+        """
+        road = ['.'] * self.road_len
+        for car in self.cars:
+            road[car.x] = str(car.v)
+        return ''.join(road)
+
+    def run(self, steps=20):
+        """
+        Run the model for a given number of time steps and print the road.
+        """
+        for t in range(steps):
+            print(self.road_string())
+            self.update()
