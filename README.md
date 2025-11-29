@@ -43,14 +43,17 @@ The model is a cellular automaton model for road traffic flow that can reproduce
 <br>
 
 ## **Traffic Flow Animation**
-<p align="center">
-  <img src="nasch_animation.gif"/>
-</p>
-Here are the variables we have changed to simulate ifferent scenarios of traffic flow:
+
 - The variable "num_car" for the number of cars on the road. 
 - The variable "road_len" for the length of the road. *road_len >= num_car*
 - The variable "v_max" for the maximum velocity (Rule #1).
 - The variable "p_slow" for the probability of cars slowing down (Rule #3).
+
+<p align="center">
+  <img src="nasch_animation.gif"/>
+</p>
+
+
 <br>
 
 ## **Code Plan:**
