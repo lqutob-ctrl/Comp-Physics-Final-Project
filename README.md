@@ -13,7 +13,7 @@ The model is a cellular automaton model for road traffic flow that can reproduce
 
 1. Cars not at maximum velocity will increase their velocity by one unit. The range for the original model was from 0 to 5.
 
-2. Cars will slow down if a vehicle is in front of them and the number of cells for this distance is smaller than their current velocity. If the distance is smaller than the current velocity, the velocity will adjust to the number of empty cells in front of the car to avoid a collision.
+2. Cars will slow down if a vehicle is in front of them if the number of cells for the distance between cars is smaller than their current velocity. If true, the velocity will adjust to the number of empty cells in front of the vehicle to avoid a collision.
 
 3. Cars with a velocity of at least 1 will randomly decrease their velocity by 1 unit in accordance with a probability. The probability is denoted as p and can be set, for example, to 0.5.
 
