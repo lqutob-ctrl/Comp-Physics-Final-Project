@@ -53,6 +53,11 @@ The model is a cellular automaton model for road traffic flow that can reproduce
   <img src="nasch_animation.gif"/>
 </p>
 
+### Here is another simulation modeling the phantom traffic jam.
+
+<p align="center">
+  <img src="nasch_animation_circ.gif"/>
+</p>
 
 <br>
 
