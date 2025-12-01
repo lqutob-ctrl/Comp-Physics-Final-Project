@@ -56,7 +56,7 @@ The model is a cellular automaton model for road traffic flow that can reproduce
 ### Here is another simulation modeling the phantom traffic jam.
 
 <p align="center">
-  <img src="nasch_animation_circ.gif"/>
+  <img src="Results/nasch_animation_circ.gif"/>
 </p>
 
 <br>
