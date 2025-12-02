@@ -5,6 +5,8 @@
 
 We will conduct an analysis of traffic build-up dependence on car density using the Nagel–Schreckenberg traffic CA model. Below are the details of the analysis and further information regarding the implementation of potential solutions.
 
+[Google Slides Link](https://docs.google.com/presentation/d/1T2a7O33tk8G92zbFjHrXv_U1rADcmHQOGU60ibZkLfo/edit?usp=sharing)
+
 ## **The Nagel–Schreckenberg Model:**
 
 The model is a cellular automaton model for road traffic flow that can reproduce traffic jams, like those of real life. The model uses periodic boundary conditions (a row of cells that loops back to itself) and car object parameters (cell occupation and velocity) to represent or reproduce interactions. Below are the behaviors (in specific order) of the cars.
